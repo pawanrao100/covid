@@ -38,13 +38,6 @@ res.render('index',{
 
 });
 
-// //state waise data
-
-// app.get('/stateWise',(req,res)=>{
-//   res.render('state_data_list',{
-//     title :'State wise Covide Data List'
-//   });
-// });
 
 //state data list
 

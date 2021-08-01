@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1 class="text-center"><%= title %></h1>
+    <div class="container row">
+	<div class='sidenav col-3' id='navBar'>
+	    <div class='list-group'>
+	        <a href='/' class='list-group-item active list-group-item-action' data-toggle="list" role="tab">Home</a>
+	        <a href='/stateWise' class='list-group-item list-group-item-action' data-toggle="list" role="tab">State Data</a>
+	        <a href='/zonelist' class='list-group-item list-group-item-action' data-toggle="list" role="tab">Zone in  State</a>
+	         </div>
+	</div>
+	<div class='col-9' id='main'>
+		<div class='card-deck'>
+	        <div class='card' id='ifom-card'>
+	            <div class='card-header d-flex justify-content-center' id='ifom-card-header'>
+	                <h5>Active</h5>
+	            </div>
+	            <div class='card-body d-flex justify-content-center' id='ifom-card-body'>
+	                <div class="text-primary" role="status" id='ifom-card-spinner'>
+                      <%= results.active %>
+                    </div>
+	            </div>
+	        </div>
+	        <div class='card' id='proj-card'>
+	            <div class='card-header d-flex justify-content-center' id='proj-card-header'>
+	                <h5>Deaths</h5>
+	            </div>
+	            <div class="card-body d-flex justify-content-center" id='proj-card-body'>
+	                <div class="text-primary" role="status" id='proj-card-spinner'>
+                        <%= results.deaths %>
+                    </div>
+	            </div>
+	        </div>
+	        <div class='card' id='stats-card'>
+	            <div class='card-header d-flex justify-content-center' id='stats-card-header'>
+	                <h5>Confirmed</h5>
+	            </div>
+	            <div class="card-body d-flex justify-content-center" id='stats-card-body'>
+	                <div class="text-primary" role="status" id='stats-card-spinner'>
+                        <%= results.confirmed %>
+                    </div>
+	            </div>
+	        </div>
+            <div class='card' id='stats-card'>
+	            <div class='card-header d-flex justify-content-center' id='stats-card-header'>
+	                <h5>New Deaths</h5>
+	            </div>
+	            <div class="card-body d-flex justify-content-center" id='stats-card-body'>
+	                <div class="text-primary" role="status" id='stats-card-spinner'>
+                        <%= results.newdeaths %>
+                    </div>
+	            </div>
+	        </div>
+	    </div>
+<br>
+        <div class='card-deck'>
+	        <div class='card' id='ifom-card'>
+	            <div class='card-header d-flex justify-content-center' id='ifom-card-header'>
+	                <h5>Recovered</h5>
+	            </div>
+	            <div class='card-body d-flex justify-content-center' id='ifom-card-body'>
+	                <div class="text-primary" role="status" id='ifom-card-spinner'>
+                        <%= results.recovered %>
+                    </div>
+	            </div>
+	        </div>
+	        <div class='card' id='proj-card'>
+	            <div class='card-header d-flex justify-content-center' id='proj-card-header'>
+	                <h5>New Confirmed</h5>
+	            </div>
+	            <div class="card-body d-flex justify-content-center" id='proj-card-body'>
+	                <div class="text-primary" role="status" id='proj-card-spinner'>
+                        <%= results.newconfirmed %>
+                    </div>
+	            </div>
+	        </div>
+	        <div class='card' id='stats-card'>
+	            <div class='card-header d-flex justify-content-center' id='stats-card-header'>
+	                <h5>New Recovered</h5>
+	            </div>
+	            <div class="card-body d-flex justify-content-center" id='stats-card-body'>
+	                <div class="text-primary" role="status" id='stats-card-spinner'>
+                        <%= results.newrecovered %>
+                    </div>
+	            </div>
+	        </div>
+            <div class='card' id='stats-card'>
+	            <div class='card-header d-flex justify-content-center' id='stats-card-header'>
+	                <h5>Migrated Other</h5>
+	            </div>
+	            <div class="card-body d-flex justify-content-center" id='stats-card-body'>
+	                <div class="text-primary" role="status" id='stats-card-spinner'>
+                        <%= results.migratedother %>
+                    </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class='row p-1'>
+	        <div class='col'>
+	            <div class='card' id='tab-card'>
+        	        <div class='card-header' id='tab-card-header'>
+        	            <h5>Last Update Time : <%= results.lastupdatedtime %></h5>
+        	        </div>
+        	        
+        	    </div>
+	        </div>
+    	</div>
+        
+	</div>
+</div>
+</body>
+
+</html>

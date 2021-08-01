@@ -1,0 +1,30 @@
+{
+  "name": "covid",
+  "version": "1.0.0",
+  "description": "Covid all data in India",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawanrao100/covid.git"
+  },
+  "keywords": [
+    "Covid",
+    "all",
+    "data"
+  ],
+  "author": "Pawan Rao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pawanrao100/covid/issues"
+  },
+  "homepage": "https://github.com/pawanrao100/covid#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

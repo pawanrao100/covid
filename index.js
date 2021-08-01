@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const ejs = require('ejs');
 var app = new express();
 var axios = require("axios").default;
-const port = process.env.port || 8000;
+const port = process.env.port || 3000;
 
 //set ejs view
 app.set('views',path.join(__dirname,'views'));
